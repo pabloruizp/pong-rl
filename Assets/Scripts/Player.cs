@@ -18,7 +18,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Vector2 direction = new Vector2(0, Input.GetAxis("Vertical"));
         Move(direction); 
