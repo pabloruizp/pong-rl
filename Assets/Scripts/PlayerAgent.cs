@@ -17,7 +17,7 @@ public class PlayerAgent : Agent
         float degrees = 360 / nRay;
 
         for(int i=0; i < nRay; i++) {
-            hits[i] = Physics2D.Raycast(rb.position, new Vector2(Mathf.Cos(i*degrees * Mathf.Deg2Rad), Mathf.Sin(i*degrees * Mathf.Deg2Rad)), Mathf.Infinity, 768);
+            hits[i] = Physics2D.Raycast(rb.position, new Vector2(Mathf.Cos(i*degrees * Mathf.Deg2Rad), Mathf.Sin(i*degrees * Mathf.Deg2Rad)), Mathf.Infinity, 256);
             Debug.DrawRay(rb.position, new Vector2(Mathf.Cos(i*degrees * Mathf.Deg2Rad), Mathf.Sin(i*degrees * Mathf.Deg2Rad)) * hits[i].distance, Color.red);
         }
     }
@@ -33,7 +33,7 @@ public class PlayerAgent : Agent
         float degrees = 360 / nRay;
 
         for(int i=0; i < nRay; i++) {
-            sensor.AddObservation(Physics2D.Raycast(rb.position, new Vector2(Mathf.Cos(i*degrees * Mathf.Deg2Rad), Mathf.Sin(i*degrees * Mathf.Deg2Rad)), Mathf.Infinity, 768));
+            sensor.AddObservation(Physics2D.Raycast(rb.position, new Vector2(Mathf.Cos(i*degrees * Mathf.Deg2Rad), Mathf.Sin(i*degrees * Mathf.Deg2Rad)), Mathf.Infinity, 256));
         }
     }
 

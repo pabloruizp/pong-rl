@@ -211,6 +211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2126085192, guid: 054b0da951659a242a994b8ec7574010, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2810006315344035497, guid: 054b0da951659a242a994b8ec7574010,
         type: 3}
       propertyPath: m_RootOrder
@@ -270,6 +274,22 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameTrain Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2810006316061802670, guid: 054b0da951659a242a994b8ec7574010,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6087332522906703273, guid: 054b0da951659a242a994b8ec7574010,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 5022602860645237092, guid: 405c093256277914698921659b9b50b3,
+        type: 3}
+    - target: {fileID: 6087332522906703273, guid: 054b0da951659a242a994b8ec7574010,
+        type: 3}
+      propertyPath: m_BehaviorType
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 054b0da951659a242a994b8ec7574010, type: 3}
